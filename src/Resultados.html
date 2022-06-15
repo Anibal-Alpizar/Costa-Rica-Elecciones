@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/partidos.css">
+    <link rel="icon" href="https://images.visitarcostarica.com/bandera-de-costa-rica.jpg">
+
+    <link rel="icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Logo_del_Partido_Acci%C3%B3n_Ciudadana.svg/1200px-Logo_del_Partido_Acci%C3%B3n_Ciudadana.svg.png">
+
+    <title> Resultados de las encuestas </title>
+
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet" />
+    <!--Boostrap Link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- SCROOLL REVEAL JS LIBRARY CDN -->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <!--Mi hoja de estilos-->
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Elecciones de Costa Rica</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link active" href="../index.html">Volver a Home<span
+                            class="sr-only">(current)</span></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Header -->
+    <header id="header">
+        <div class="container mt-5">
+            <!--Margin top 5 (boostrap)-->
+            <div class="row">
+
+                <div class="col-md-6">
+                    <!--6 para la derecha-->
+                    <div class="header-content-right">
+
+                        <h1 class="display-4">Información adicional
+                        </h1>
+                        <p class="mt-5">Sondeos de las elecciones presidenciales de Costa Rica de 2022</p>
+                        <a href="https://es.wikipedia.org/wiki/Anexo:Sondeos_de_las_elecciones_presidenciales_de_Costa_Rica_de_2022"
+                            class="btn btn-outline-secondary btn-lg mt-2 header-btn">Leer mas</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!--6 para la izquierda-->
+                    <div class="header-content-left">
+                        <img src="../img/vote.jpg" style="width: 100%;">
+                        <!--Estilo en linea-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Testimonial-->
+    <section class="results">
+        <div class="container">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th style="text-align: left;" scope="col">Partido Politico</th>
+                        <th style="text-align: center;" scope="col">Cantidato a la presidencia</th>
+                        <th scope="col">Encuesta 1</th>
+                        <th scope="col">Encuesta 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="c" scope="row"><img src="../img/accionciudadanaflag.jpg" width="20%"></th>
+                        <td>Weler Ramos G.</td>
+                        <td>1%</td>
+                        <td>5%</td>
+                    </tr>
+                    <tr>
+                        <th class="c" scope="row"><img src="../img/nuevarepublicaflag.jpg" width="20%"></th>
+                        <td>Fabricio Alvarado M.</td>
+                        <td>14%</td>
+                        <td>17%</td>
+                    </tr>
+                    <tr>
+                        <th class="c" scope="row"><img src="../img/UnionLiberalflag.png" width="20%"></th>
+                        <td>Federico Malavassi.</td>
+                        <td>13%</td>
+                        <td>20%</td>
+                    </tr>
+                    <tr>
+                        <th class="c" scope="row"><img src="../img/FrenteAmplioflag.jpg" width="20%"></th>
+                        <td>José María Villalta.</td>
+                        <td>5%</td>
+                        <td>16%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="container text-center">
+        <div class="row">
+
+            <!--Acordion-->
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                                aria-expanded="true" aria-controls="collapseOne">
+                                Mas información...
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            A pocos días de las elecciones, las tendencias de las intenciones de voto se conservan y hay
+                            una menor proporción de personas indecisas, pero esta sigue siendo importante, pues 3 de
+                            cada 10 personas entrevistadas están en esa condición <br>
+                            <a href="https://es.wikipedia.org/wiki/Anexo:Sondeos_de_las_elecciones_presidenciales_de_Costa_Rica_de_2022">¡Conocer mas sobre la gráfica!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="copyr">
+        <footer id="mainfooter">
+            <div class="container">
+                <p><a href="../index.html">¡Ir al inicio!</a></p>
+                <p>Anibal Alpizar Campos © 2022</p>
+            </div>
+        </footer>
+    </section>
+
+    <!--Boostrap cdn-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('.navbar', {
+            duration: 2000,
+            origin: 'bottom'
+        });
+
+        sr.reveal('.header-content-left', {
+            duration: 2000,
+            origin: 'top',
+            distance: '300px'
+        });
+
+        sr.reveal('.header-content-right', {
+            duration: 2000,
+            origin: 'right',
+            distance: '300px'
+        });
+
+        sr.reveal('.results', {
+      duration: 2000,
+      origin: 'top',
+      distance: '300px',
+      viewFactor: 0.2
+    });
+
+    sr.reveal('.container', {
+      duration: 2000,
+      origin: 'bottom',
+      distance: '300px',
+      viewFactor: 0.2
+    });
+
+
+    </script>
+</body>
+
+</html>

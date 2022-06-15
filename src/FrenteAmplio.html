@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/partidos.css">
+    <link rel="icon" href="img/avatar-icon.png">
+
+    <link rel="icon"
+        href="data:image/png;base64,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">
+
+    <title> Frente Amplio </title>
+
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet" />
+    <!--Boostrap Link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- SCROOLL REVEAL JS LIBRARY CDN -->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <!--Mi hoja de estilos-->
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Elecciones de Costa Rica</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link active" href="../index.html">Volver a Home<span
+                            class="sr-only">(current)</span></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Header -->
+    <header id="header">
+        <div class="container mt-5">
+            <!--Margin top 5 (boostrap)-->
+            <div class="row">
+                <div class="col-md-6">
+                    <!--6 para la izquierda-->
+                    <div class="header-content-left mt-5">
+                        <img src="../img/Villalta.jpg" style="width: 100%;">
+                        <!--Estilo en linea-->
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!--6 para la derecha-->
+                    <div class="header-content-right mt-5">
+
+                        <h1 class="display-4">Información Personal
+                        </h1>
+                        <p class="mt-5">
+                            Lugar y fecha de nacimiento: 13 de agosto de 1977 <br>
+                            Profesión: Abogado y ecologista <br>
+                            Estado civil: Casado <br>
+                            ​Provincia: San José <br>
+                            Periodo: 2018-2022 <br>
+                            Fracción Parlamentaria: Partido Frente Amplio <br>
+                            Correo electrónico: ​jose.villalta@asamblea.go.cr <br>
+                        </p>
+                        <a href="http://www.asamblea.go.cr/Diputados/villalta_flores_estrada/SitePages/Curriculum.aspx"
+                            class="btn btn-outline-secondary btn-lg mt-2 header-btn">Leer mas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Testimonial-->
+    <section id="testiomal">
+        <div class="container">
+            <p class="h2 mb-2">
+                "El primer decreto que firmaré será reducir en un 50% el salario del Presidente"
+            <p class="h4">
+                <!--Estilo de boostrap-->
+                -José María Villalta.
+            </p>
+            </p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Discurso</h2>
+            <div class="contact-row">
+                <video width="300" height="300" controls>
+                    <source src="../video/VillaltaDiscurso.mp4" type="video/mp4">
+                </video>
+                <div class="div-contenedor">
+                    <div id="banner"></div>
+                    <br><br>
+                    <div id="disco">
+                        <p id="letra"></p>
+                        <p id="disco2"></p>
+                    </div>
+                    <div id="reproductor">
+                        <audio controls>
+                            <source src="../audio/Villalta.mp3" type="audio/mpeg">
+                            <source src="../audio/Villalta.mp3" type="audio/ogg">
+                            <embed src="../audio/Villalta.mp3" type="audio/mpeg" height="50" width="100">
+                        </audio>
+                    </div>
+                </div>
+                <div class="container">
+                    <span class="label label-default"><a
+                            href="https://www.youtube.com/watch?v=9k8WwdI7fEI&t=85s&ab_channel=LaNaci%C3%B3nCostaRica">Ver
+                            Discurso José María Villalta</a></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="container text-center">
+        <div class="row">
+
+            <!--Acordion-->
+
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                                aria-expanded="true" aria-controls="collapseOne">
+                                Plan de gobierno
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            Plan de Gobierno 2022-2026 ¡Hay Esperanza! ... Dirección: San José 100 metros este y 25
+                            metros sur de la esquina sureste del Museo Nacional. Apartado: 11481-10102 ... <br>
+                            <a href="../pdf/FrenteAmplio.pdf" download="2022 - 2026 Frente Amplio">
+                                ¡Descargar aqui!
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                aria-expanded="false" aria-controls="collapseTwo">
+                                Página Principal del candidato
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            Apartado: 11481-10102, San José, Costa Rica; Teléfono: +506-2258-5641; Correo electrónico:
+                            comu.frenteamplio@gmail.com. DIPUTADO JOSÉ MARÍA VILLALTA. <br>
+                            <a href="https://www.frenteamplio.org/">¡Ir a la página oficial!</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+
+    <section class="copyr">
+        <footer id="mainfooter">
+            <div class="container">
+                <p><a href="../index.html">¡Ir al inicio!</a></p>
+                <p>Anibal Alpizar Campos © 2022</p>
+            </div>
+        </footer>
+    </section>
+
+    <!--Boostrap cdn-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script>
+                window.sr = ScrollReveal();
+        sr.reveal('.navbar', {
+            duration: 2000,
+            origin: 'bottom'
+        });
+
+        sr.reveal('.header-content-left', {
+            duration: 2000,
+            origin: 'top',
+            distance: '300px'
+        });
+
+        sr.reveal('.header-content-right', {
+            duration: 2000,
+            origin: 'right',
+            distance: '300px'
+        });
+
+        sr.reveal('.testiomal', {
+            duration: 2000,
+            origin: 'left',
+            distance: '300px'
+        });
+
+        sr.reveal('#contact', {
+            duration: 2000,
+            origin: 'top',
+            distance: '300px'
+        });
+
+        sr.reveal('.container', {
+            duration: 2000,
+            origin: 'right',
+            distance: '300px'
+        });
+
+    </script>
+</body>
+
+</html>
